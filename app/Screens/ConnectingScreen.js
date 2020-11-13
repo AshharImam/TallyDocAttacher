@@ -20,7 +20,7 @@ const ConnectingScreen = ({ navigation }) => {
 
   handleConnection = () => {
     Keyboard.dismiss();
-    console.log(serverIP);
+    // console.log(serverIP);
     setLoading(true);
     axios
       .get("http://" + serverIP + ":5500")
